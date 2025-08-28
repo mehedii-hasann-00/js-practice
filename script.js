@@ -35,3 +35,5 @@ function handle_copy(btn) {
     navigator.clipboard.writeText(number);
     alert("Copied Successfully : "+number);
 }
+
+
