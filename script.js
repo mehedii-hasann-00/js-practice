@@ -26,11 +26,9 @@ function handle_call(btn) {
         alert("Insufficient Coins..")
     }
 }
-
 function clear_history() {
     document.getElementById('history').innerHTML ='';
 }
-
 function handle_copy(btn) {
     const number = btn.parentElement.previousElementSibling.previousElementSibling.textContent;
     document.getElementById('copy_count').innerText = parseInt(document.getElementById('copy_count').innerText)+1;
