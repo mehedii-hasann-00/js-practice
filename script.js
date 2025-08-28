@@ -26,3 +26,7 @@ function handle_call(btn) {
         alert("Insufficient Coins..")
     }
 }
+
+function clear_history() {
+    document.getElementById('history').innerHTML ='';
+}
