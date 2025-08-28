@@ -30,3 +30,10 @@ function handle_call(btn) {
 function clear_history() {
     document.getElementById('history').innerHTML ='';
 }
+
+function handle_copy(btn) {
+    const number = btn.parentElement.previousElementSibling.previousElementSibling.textContent;
+    document.getElementById('copy_count').innerText = parseInt(document.getElementById('copy_count').innerText)+1;
+    navigator.clipboard.writeText(number);
+    alert("Copied Successfully : "+number);
+}
